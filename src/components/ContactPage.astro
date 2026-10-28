@@ -1,0 +1,10 @@
+---
+import { capture } from '../config/capture.js';
+---
+<script is:inline type="text/javascript" src={capture.mauticScriptUrl}></script>
+<p class="mauticform-error" role="alert" aria-live="polite"></p>
+<script>
+  import { integrateBubbleForm } from '../scripts/capture-form.js';
+  integrateBubbleForm();
+</script>
+<noscript><p>Ative o JavaScript para utilizar o formulário.</p></noscript>

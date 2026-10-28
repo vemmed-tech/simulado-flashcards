@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactPage from '../components/ContactPage.astro';
+---
+<BaseLayout title="Análise de TRI | VemMED" description="Acesse gratuitamente a Análise de TRI da VemMED e pratique com questões para sua preparação para o ENEM.">
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <span class="decoration-circle" aria-hidden="true"></span>
+      <span class="decoration-diamond" aria-hidden="true"></span>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <a class="wordmark" href="#conteudo" aria-label="VemMED, início">
+            <img src="/assets/logo-vemmed.svg" alt="VemMED" width="86" />
+          </a>
+          <p class="page-badge">ANÁLISE DE TRI</p>
+          <h1 id="hero-title">Análise de TRI</h1>
+          <p class="hero__lead">Resolva as questões da Análise de TRI e observe como você lida com cada desafio. Uma oportunidade para reconhecer suas dificuldades e refletir sobre o que merece atenção na sua preparação para o ENEM, respeitando seu ritmo.</p>
+          <div class="hero__access" role="note" aria-label="Acesso gratuito">
+            <span class="hero__access-check" aria-hidden="true">✓</span>
+            <div>
+              <p class="hero__access-title">Acesso gratuito.</p>
+              <p class="hero__access-description">Solicite a liberação pelo formulário.</p>
+            </div>
+          </div>
+        </div>
+        <aside class="capture-panel" id="cadastro" aria-labelledby="panel-title">
+          <p class="capture-panel__eyebrow">ACESSO AO APLICATIVO</p>
+          <h2 id="panel-title">Acessar análise</h2>
+          <p class="capture-panel__description">Informe seus dados para solicitar acesso à Análise de TRI.</p>
+          <ContactPage />
+        </aside>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
