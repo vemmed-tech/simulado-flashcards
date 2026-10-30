@@ -2,19 +2,23 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactPage from '../components/ContactPage.astro';
 ---
-<BaseLayout title="Análise de TRI | VemMED" description="Acesse gratuitamente a Análise de TRI da VemMED e pratique com questões para sua preparação para o ENEM.">
+<BaseLayout title="Simulado e Flashcards | VemMED" description="Acesse gratuitamente o Simulado e Flashcards da VemMED e pratique para sua preparação para o ENEM.">
   <main id="conteudo">
     <section class="hero" aria-labelledby="hero-title">
       <span class="decoration-circle" aria-hidden="true"></span>
       <span class="decoration-diamond" aria-hidden="true"></span>
       <div class="hero__inner">
         <div class="hero__copy">
-          <a class="wordmark" href="#conteudo" aria-label="VemMED, início">
-            <img src="/assets/logo-vemmed.svg" alt="VemMED" width="86" />
-          </a>
-          <p class="page-badge">ANÁLISE DE TRI</p>
-          <h1 id="hero-title">Análise de TRI</h1>
-          <p class="hero__lead">Resolva as questões da Análise de TRI e observe como você lida com cada desafio. Uma oportunidade para reconhecer suas dificuldades e refletir sobre o que merece atenção na sua preparação para o ENEM, respeitando seu ritmo.</p>
+          <div class="wordmark" role="group" aria-label="Parceria VemMED e HG6">
+            <a href="#conteudo" aria-label="VemMED, início">
+              <img src="/assets/logo-vemmed.svg" alt="VemMED" width="86" />
+            </a>
+            <span class="brandmark-plus" aria-hidden="true">+</span>
+            <img class="brandmark-hg6" src="/assets/logo-hg6.svg" alt="HG6" />
+          </div>
+          <p class="page-badge">SIMULADO E FLASHCARDS</p>
+          <h1 id="hero-title">Simulado e Flashcards</h1>
+          <p class="hero__lead">Pratique com o simulado e use flashcards para retomar conteúdos importantes da sua preparação para o ENEM. Um espaço para colocar seus conhecimentos em ação e revisar no seu ritmo.</p>
           <div class="hero__access" role="note" aria-label="Acesso gratuito">
             <span class="hero__access-check" aria-hidden="true">✓</span>
             <div>
@@ -25,11 +29,19 @@ import ContactPage from '../components/ContactPage.astro';
         </div>
         <aside class="capture-panel" id="cadastro" aria-labelledby="panel-title">
           <p class="capture-panel__eyebrow">ACESSO AO APLICATIVO</p>
-          <h2 id="panel-title">Acessar análise</h2>
-          <p class="capture-panel__description">Informe seus dados para solicitar acesso à Análise de TRI.</p>
+          <h2 id="panel-title">Acessar conteúdo</h2>
+          <p class="capture-panel__description">Informe seus dados para solicitar acesso ao Simulado e Flashcards.</p>
           <ContactPage />
         </aside>
       </div>
     </section>
   </main>
 </BaseLayout>
+
+<style>
+  .wordmark { gap: 18px; }
+  .wordmark a { display: block; }
+  .brandmark-plus { color: var(--ink-soft); font: 500 1.5rem/1 var(--font-body); }
+  .wordmark .brandmark-hg6 { width: auto; height: 66px; object-fit: contain; }
+</style>
+

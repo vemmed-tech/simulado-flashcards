@@ -1,7 +1,7 @@
 import { capture, getThankYouUrl } from '../config/capture.js';
 
 export const BUBBLE_ENDPOINT = capture.bubbleEndpoint;
-export const MAUTIC_FORM_ID = '24';
+export const MAUTIC_FORM_ID = '26';
 
 const FIELD_LABELS = {
   texto_resposta_curta: ['nome'],

@@ -1,5 +1,5 @@
 {
-  "name": "tri-vemmed",
+  "name": "simulado-flashcards-vemmed",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -8,5 +8,7 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-  "dependencies": { "astro": "^7.3.8" }
+  "dependencies": {
+    "astro": "^7.3.8"
+  }
 }

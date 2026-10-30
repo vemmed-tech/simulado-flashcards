@@ -1,8 +1,8 @@
 export const capture = {
-  product: 'analise_tri',
+  product: 'hg6',
   thankYouUrl: 'https://flashcardturbo.vemmed.com/obrigado',
-  bubbleEndpoint: 'https://flashcard-turbo.bubbleapps.io/api/1.1/wf/sign_up_tri/',
-  mauticScriptUrl: 'https://mautic.vemmed.com.br/form/generate.js?id=24',
+  bubbleEndpoint: 'https://flashcard-turbo.bubbleapps.io/api/1.1/wf/sign_up_hg6/',
+  mauticScriptUrl: 'https://mautic.vemmed.com.br/form/generate.js?id=26',
 };
 
 export function getThankYouUrl(email) {
